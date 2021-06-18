@@ -1,0 +1,35 @@
+<%- include("partials/header"); -%>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+        <h1><%= title %></h1>
+    </div>
+    <div class="col-6">
+
+      <form class="delete" action="/delete" method="post">
+        <button type="submit" class = "btn" name="delete" value="<%= title %>" style="font-size: 24px; color: #1abc9c;" ><i class="fas fa-trash"></i></button>
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container">
+   <p><%= content %></p>
+
+  </div>
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer'); -%>
